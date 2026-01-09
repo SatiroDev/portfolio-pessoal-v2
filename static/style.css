@@ -100,7 +100,6 @@ main {
     margin-top: 150px;
     gap: 20px;
     position: relative;
-    border: solid;
 }
 
 .msg {
@@ -294,4 +293,5 @@ main {
     100% {
         transform: translate(0%, 25%);
     }
+
 }
