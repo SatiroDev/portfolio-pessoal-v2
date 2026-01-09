@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0a0b10;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    padding: 25px 0px ;
+    flex-wrap: wrap;
+    background-color: #13161f;
+    z-index: 5;
+}
+
+.logo { 
+    background-image: linear-gradient(to right, #19d0fc, #7358d6);
+    background-clip: text;
+    font-size: 2rem;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    margin-left: 100px;
+}
+
+
+nav {
+    display: flex;
+    gap: 40px;
+    margin-right: 100px;
+    text-decoration: none;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.aba {
+    position: relative;
+    color: #66778e;
+}
+
+.aba:hover {
+    color: white;
+}
+
+.aba::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #01dbef;
+    transition: width 0.2s ease;
+}
+
+.aba:hover::after {
+    width: 100%;
+}
+
+.aba.ativa {
+    color: #01dbef;
+}
+
+.aba.ativa::after {
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #01dbef;
+    position: absolute;
+    transition: width 0.2s ease;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    padding: 20px 0;
+    margin-top: 150px;
+    gap: 20px;
+    position: relative;
+    border: solid;
+}
+
+.msg {
+    color: #01dbef;
+    font-size: 18px;
+}
+
+.nome {
+    background-image: linear-gradient(to right, #19d0fc, #7358d6);
+    background-clip: text;
+    font-size: 4rem;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+}
+
+.dev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: clamp(1.2rem, 4vw, 2.5rem);
+    color: #66778e;
+}
+
+.desenvolvedor{
+    animation: add-letters 2s steps(22) ;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.pipe {
+    animation: opacit 1s steps(1) infinite;
+}
+
+@keyframes add-letters {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 22ch;
+    }
+}
+
+@keyframes opacit {
+    0% { 
+        opacity: 1; 
+    }
+    50% { 
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1; 
+    }
+}
+
+.msgBreve {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #66778e;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+.botoesInicio {
+    display: flex;
+    gap: 10px;
+}
+
+.btnVerProjetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: #01dbef;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    gap: 5px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.btnVerProjetos:hover {
+
+    box-shadow: 0px 0px 15px 1px #01dbef;
+}
+
+
+.setaBaixo {
+    width: 20px;
+}
+
+.btnContato {
+    padding: 15px 25px;
+    background-color: transparent;
+    border: 1px solid    #01dbef;
+    border-radius: 10px;
+    font-size: 17px;
+    gap: 5px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+    color: #01dbef;
+}
+
+.btnContato:hover {
+    background-color: #16263d;
+}
+
+.inicio::before {
+    content: "";
+    width: clamp(20px, 150px, 180px);
+    height: clamp(20px, 150px, 180px);
+    position: absolute;
+    border-radius: 50%;
+    background-color: #00eaff;
+    top: 40%;
+    left: 0%;
+
+    filter: blur(100px);
+    animation: pulse 0.8s infinite alternate;
+}
+
+.inicio::after {
+    content: "";
+    width: clamp(20px, 150px, 180px);
+    height: clamp(20px, 150px, 180px);
+    position: absolute;
+    border-radius: 50%;
+    background-color: #7358d6;
+    top: 40%;
+    left: 70%;
+    filter: blur(100px);
+    animation: pulse 0.8s infinite alternate-reverse;
+}
+
+
+
+
+@keyframes pulse {
+    0% {
+        opacity: 0.3;
+        scale: 0.9; 
+    }
+    100% {
+        opacity: 0.5;
+        scale: 1.1; 
+    }
+}
+
+.botoesMidiasSociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* flex-direction: column; */
+}
+
+.gitHubImg {
+    width: 25px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.btnGitHub:hover .gitHubImg{
+    background-color: #00eaff;
+}
+
+
+
+.instaImg {
+    width: 25px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.btnInsta:hover .instaImg{
+    background-color: #00eaff;
+}
+
+.setaBaixoIndicador {
+    width: 30px;
+    margin-top: 120px;
+    animation: indicator 0.5s ease-in infinite alternate;
+}
+
+@keyframes indicator {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    100% {
+        transform: translate(0%, 25%);
+    }
+}

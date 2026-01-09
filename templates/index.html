@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',  filename='style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            J. Satiropde7
+        </div>
+        <nav>
+            <a href="" class="aba ativa">Início</a>
+            <a href="" class="aba">Sobre</a>
+            <a href="" class="aba">Projetos</a>
+            <a href="" class="aba">Habilidades</a>
+            <a href="" class="aba">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <div class="inicio" id="inicio">
+            
+            <p class="msg">Olá, eu sou</p>
+            <h1 class="nome">José Satiro</h1>
+            <div class="dev">
+                <p class="desenvolvedor">Desenvolvedor Full-Stack</p>
+                <p class="pipe">|</p>
+            </div>
+            <p class="msgBreve">
+                Apaixonado por criar interfaces modernas, responsivas e com experiências incríveis para os usuários.
+            </p>
+            <div class="botoesInicio">
+                <button class="btnVerProjetos">
+                    <p>Ver Projetos</p>
+                    <img src="{{ url_for('static', filename='img/arrow-sm-down-svgrepo-com.svg') }}" alt="seta baixo" class="setaBaixo">
+                </button>
+                <button class="btnContato">
+                    Fale Comigo
+                </button>
+            </div>
+            <div class="botoesMidiasSociais">
+                <a href="" class="btnGitHub">
+                    <img src="{{ url_for('static', filename='img/github-svgrepo-com (1).svg') }}" alt="GitHub" class="gitHubImg">
+                </a>
+                <a href="" class="btnInsta">
+                    <img src="{{ url_for('static', filename='img/instagram-svgrepo-com.svg') }}" alt="Instagram" class="instaImg">
+                </a>  
+            </div>
+            <img src="{{ url_for('static', filename='img/arrow-sm-down-svgrepo-com (1).svg') }}" alt="seta baixo" class="setaBaixoIndicador">
+        </div>
+    </main>
+</body>
+</html>
