@@ -87,6 +87,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 100px;
 }
 
 .inicio {
@@ -97,7 +99,7 @@ main {
     width: auto;
     height: auto;
     padding: 20px 0;
-    margin-top: 150px;
+    margin-top: 200px;
     gap: 20px;
     position: relative;
 }
@@ -294,4 +296,180 @@ main {
         transform: translate(0%, 25%);
     }
 
+}
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.msgSobreMim {
+    color: white;
+}
+
+strong {
+    color: #00eaff;
+    font-weight: normal;
+}
+
+.containerPrincipal {
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    gap: 50px;
+    
+}
+
+.containerP, .containerS {
+    display: flex;
+    flex-direction: column  ;
+    width: 40%;
+    gap: 20px;
+}
+
+.containerP {
+    gap: 40px;
+}
+
+.bio {
+    color: #66778e;
+    font-size: 1.3rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    padding: 15px 20px;
+    width: 40%;
+    border: 1px solid #252733;
+    background-color: #13141c;
+    border-radius: 15px;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 0 10px 20px #08090d;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px 0.2px #30a8b3;
+    z-index: 1;
+}
+
+.imgCard {
+    width: 25px;
+}
+
+.tituloCard {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.descricaoCard {
+    color: #66778e;
+}
+
+.minhasSkills {
+    font-size: 25px;
+    color: white;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.hSkill {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nomeSkill {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.porcentagem {
+    color: #00eaff;
+}
+
+.barraSkill {
+    width: 100%;
+    height: 10px;
+    background-color: #21222c;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.barraPreenchidaHTML-CSS {
+    width: 80%;
+    height: 10px;
+    background: linear-gradient( to right ,#00eaff, #954beb);
+    border-radius: 10px;
+}
+
+
+.barraPreenchidaJS {
+    width: 30%;
+    height: 10px;
+    background: linear-gradient( to right ,#00eaff, #954beb);
+    border-radius: 10px;
+}
+
+
+.barraPreenchidaPython {
+    width: 75%;
+    height: 10px;
+    background: linear-gradient( to right ,#00eaff, #954beb);
+    border-radius: 10px;
+}
+
+
+.barraPreenchidaJava {
+    width: 60%;
+    height: 10px;
+    background: linear-gradient( to right ,#00eaff, #954beb);
+    border-radius: 10px;
+}
+
+.tecnologiasGeral {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.tecsQueUtilozo {
+    color: #66778e;
+}
+
+.tecnologias {
+    display: flex;
+    gap: 10px;
+}
+
+.tecnologia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 5px 15px;
+    background-color: #21222c;
+    color: #697a93;
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static',  filename='style.css') }}">
+    <link rel="stylesheet" href="../static/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,8 +13,8 @@
             J. Satiropde7
         </div>
         <nav>
-            <a href="" class="aba ativa">Início</a>
-            <a href="" class="aba">Sobre</a>
+            <a href="#inicio" class="aba ativa">Início</a>
+            <a href="#sobre" class="aba">Sobre</a>
             <a href="" class="aba">Projetos</a>
             <a href="" class="aba">Habilidades</a>
             <a href="" class="aba">Contato</a>
@@ -34,7 +35,8 @@
             <div class="botoesInicio">
                 <button class="btnVerProjetos">
                     <p>Ver Projetos</p>
-                    <img src="{{ url_for('static', filename='img/arrow-sm-down-svgrepo-com.svg') }}" alt="seta baixo" class="setaBaixo">
+                    <!-- <img src="{{ url_for('static', filename='img/arrow-sm-down-svgrepo-com.svg') }}" alt="seta baixo" class="setaBaixo"> -->
+                    <img src="../static/img/arrow-sm-down-svgrepo-com.svg" alt="seta baixo" class="setaBaixo">
                 </button>
                 <button class="btnContato">
                     Fale Comigo
@@ -42,13 +44,125 @@
             </div>
             <div class="botoesMidiasSociais">
                 <a href="" class="btnGitHub">
-                    <img src="{{ url_for('static', filename='img/github-svgrepo-com (1).svg') }}" alt="GitHub" class="gitHubImg">
+                    <!-- <img src="{{ url_for('static', filename='img/github-svgrepo-com (1).svg') }}" alt="GitHub" class="gitHubImg"> -->
+                    <img src="../static/img/github-svgrepo-com (1).svg" alt="GitHub" class="gitHubImg">
                 </a>
                 <a href="" class="btnInsta">
-                    <img src="{{ url_for('static', filename='img/instagram-svgrepo-com.svg') }}" alt="Instagram" class="instaImg">
+                    <!-- <img src="{{ url_for('static', filename='img/instagram-svgrepo-com.svg') }}" alt="Instagram" class="instaImg"> -->
+                    <img src="../static/img/instagram-svgrepo-com.svg" alt="Instagram" class="instaImg">
                 </a>  
             </div>
-            <img src="{{ url_for('static', filename='img/arrow-sm-down-svgrepo-com (1).svg') }}" alt="seta baixo" class="setaBaixoIndicador">
+            <!-- <img src="{{ url_for('static', filename='img/arrow-sm-down-svgrepo-com (1).svg') }}" alt="seta baixo" class="setaBaixoIndicador"> -->
+            <img src="../static/img/arrow-sm-down-svgrepo-com (1).svg" alt="seta baixo" class="setaBaixoIndicador">
+        </div>
+
+        <div class="sobre" id="sobre">
+            <p class="msg">Conheça-me</p>
+            <h1 class="msgSobreMim">Sobre Mim</h1>
+            <div class="containerPrincipal">
+                <div class="containerP">
+                    <p class="bio">
+                        Olá! Sou um <strong>Desenvolvedor Front-end</strong> com paixão por transformar designs em experiências digitais incríveis. Com mais de 3 anos de experiência, especializo-me em criar interfaces modernas, responsivas e acessíveis.
+                        <br><br>
+                        Minha jornada começou com curiosidade sobre como os sites funcionam, e hoje sou apaixonado por cada pixel e linha de código. Acredito que um bom front-end vai além da aparência — é sobre <strong>criar conexões</strong> entre pessoas e tecnologia.
+                    </p>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="../static/img/code-svgrepo-com (1).svg" alt="codigo imagem" class="imgCard">
+                            <p class="tituloCard">Código Limpo</p>
+                            <p class="descricaoCard">Escrevo código organizado e legível</p>
+                        </div>
+                        <div class="card">
+                            <img src="../static/img/paint-palette-art-svgrepo-com.svg" alt="tinta imagem" class="imgCard">
+                            <p class="tituloCard">Design Moderno</p>
+                            <p class="descricaoCard">Crio interfaces atraentes e experiências memoráveis.</p>
+                        </div>
+                        <div class="card">
+                            <img src="../static/img/flash-svgrepo-com.svg" alt="raio imagem" class="imgCard">
+                            <p class="tituloCard">Performance</p>
+                            <p class="descricaoCard">Otimizo para velocidade e melhor experiência do usuário.</p>
+                        </div>
+                        <div class="card">
+                            <img src="../static/img/heart-svgrepo-com (1).svg" alt="coração imagem" class="imgCard">
+                            <p class="tituloCard">Paixão</p>
+                            <p class="descricaoCard">Amo o que faço e busco sempre evoluir.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="containerS">
+                    <h1 class="minhasSkills">
+                        Minhas Skills
+                    </h1>
+                    <div class="skills">
+                        <div class="skill">
+                            <div class="hSkill">
+                                <p class="nomeSkill">HTML5 & CSS3</p>
+                                <p class="porcentagem">80%</p>
+                            </div>
+                            <div class="barraSkill">
+                                <div class="barraPreenchidaHTML-CSS">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="hSkill">
+                                <p class="nomeSkill">JavaScript</p>
+                                <p class="porcentagem">30%</p>
+                            </div>
+                            <div class="barraSkill">
+                                <div class="barraPreenchidaJS">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="hSkill">
+                                <p class="nomeSkill">Python</p>
+                                <p class="porcentagem">75%</p>
+                            </div>
+                            <div class="barraSkill">
+                                <div class="barraPreenchidaPython">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="hSkill">
+                                <p class="nomeSkill">Java</p>
+                                <p class="porcentagem">60%</p>
+                            </div> 
+                            <div class="barraSkill">
+                                <div class="barraPreenchidaJava">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tecnologiasGeral">
+                        <div class="tecsQueUtilozo">
+                            Tecnologias que utilizo:
+                        </div>
+                        <div class="tecnologias">
+                            <div class="tecnologia">
+                                <p class="nomeTecnologia">
+                                    Figma
+                                </p>
+                            </div>
+                            <div class="tecnologia">
+                                <p class="nomeTecnologia">
+                                    Git
+                                </p>
+                            </div>
+                            <div class="tecnologia">
+                                <p class="nomeTecnologia">
+                                    Node.js
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </body>
